@@ -1,0 +1,54 @@
+<mat-toolbar >
+    <button mat-icon-button *ngIf="sidenav.mode === 'over' " (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+        menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+        close
+      </mat-icon>
+    </button>
+    
+    <span>App</span>
+  </mat-toolbar>
+  
+  
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav class=""  #sidenav="matSidenav"  mode="side" opened>
+      <img class="avatar mat-elevation-z8"  src="../assets/angular-icon.svg" alt="">
+      <h4 class="name">Luis</h4>
+      <p class="designation">Programador</p>
+  
+      <mat-divider></mat-divider>
+  
+      
+      <button mat-button class="menu-button" >
+        <mat-icon>person</mat-icon>
+        <span>Crear</span>
+      </button>
+      
+      <button mat-button class="menu-button" >
+        <mat-icon>person</mat-icon>
+        <span>Persona</span>
+      </button>
+      
+      <button mat-button class="menu-button" >
+        <mat-icon>person</mat-icon>
+        <span>Interés</span>
+      </button>
+      
+      <mat-divider></mat-divider>
+      <button mat-button class="menu-button" >
+        <mat-icon>logout</mat-icon>
+        <span>Salir</span>
+      </button>
+      
+    </mat-sidenav>
+      <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+           Este es el contenido
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  
+  
+  
