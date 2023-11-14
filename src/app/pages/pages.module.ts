@@ -8,6 +8,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
 import {MatDividerModule} from '@angular/material/divider'; 
 import {MatButtonModule} from '@angular/material/button'; 
+import { RouterModule } from '@angular/router';
 
 
 
@@ -18,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     MatInputModule,
     MatToolbarModule,
     MatIconModule,
